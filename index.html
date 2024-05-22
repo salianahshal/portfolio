@@ -1,0 +1,365 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/global.css" />
+    <!-- <link rel="stylesheet" href="styles/css/education.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Sniglet&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .blog-slider__pagination.swiper-pagination-bullets
+        .swiper-pagination-bullet {
+        margin: 8px 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        .blog-slider__pagination.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          margin: 0 5px;
+        }
+      }
+
+      .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        display: block;
+        border-radius: 10px;
+        background: #062744;
+        opacity: 0.2;
+        transition: all 0.3s;
+      }
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #a83379;
+        height: 30px;
+        box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+      }
+
+      @media screen and (max-width: 768px) {
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          height: 11px;
+          width: 30px;
+        }
+      }
+      #product-design-row::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        background-image: linear-gradient(
+          to right top,
+          rgba(186, 209, 241, 0.6),
+          rgba(187, 205, 238, 0.6),
+          rgba(189, 201, 235, 0.6),
+          rgba(190, 196, 231, 0.6),
+          rgba(192, 192, 227, 0.6)
+        );
+        z-index: 1;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+      <div class="container header">
+        <nav class="navbar navbar-expand-md">
+          <span class="navbar-brand mb-0" id="brandName"> Salia Nahshal</span>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Work</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="education.html"
+                  class="nav-link"
+                  class="scroll-nav"
+                  style="--i: 1"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="pdfFiles/salia_nahshal_resume.pdf"
+                  class="nav-link"
+                  style="--i: 4"
+                  class="scroll-nav"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="certificates.html"
+                  class="nav-link"
+                  style="--i: 5"
+                  class="scroll-nav"
+                  >Certificates</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Introduction Section-->
+    <section class="home section mb-3" id="home">
+      <div class="home__container container grid">
+        <h1 class="home__welcome">
+          Hello, I'm
+          <span class="home__name">Salia Nahshal</span>.
+        </h1>
+
+        <div class="home__perfil">
+          <div class="home__image">
+            <img
+              src="images/selfie1.png"
+              alt="image"
+              class="home__img"
+              style="background-color: #fff"
+            />
+            <div class="home__shadow"></div>
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.linkedin.com/in/salia-nahshal-2ba27222b/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://github.com/salianahshal"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://codepen.io"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fab fa-codepen"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home__info">
+          <p class="home__description">
+            <b style="font-weight: 200px !important">UI/UX Designer</b>, with
+            roots in computer science and graphic design.
+            <span> CS + Education Studies @ Barnard College</span>
+          </p>
+          <a href="#about">
+            <div class="home__scroll-box">
+              <a href="#projects"
+                ><i
+                  class="fa fa-angle-down"
+                  aria-hidden="true"
+                  style="color: #fff"
+                ></i>
+              </a>
+            </div>
+            <span class="home__scroll-text">Scroll Down</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section-->
+    <div class="proj-body" id="projects">
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="images/fengshui.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <div
+                class="div"
+                style="display: inline-flex; flex-direction: row; gap: 20px"
+              >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >May 2024</span
+                >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >Web Design</span
+                >
+              </div>
+              <h6>UI Design</h6>
+              <div class="blog-slider__title">Fengshui</div>
+              <div class="blog-slider__text">
+                "Fengshui (风水) is a web app guiding users to apply basic
+                principles for a harmonious space. Tailored for small areas, it
+                optimizes surroundings for enhanced energy flow."
+              </div>
+              <a
+                href="work/fengshui.html"
+                class="blog-slider__button view-button"
+                >View Case Study</a
+              >
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="images/cafes-web.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <div
+                class="div"
+                style="display: inline-flex; flex-direction: row; gap: 20px"
+              >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >April 2024</span
+                >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >Product Design</span
+                >
+              </div>
+              <h6>UI Design</h6>
+              <div class="blog-slider__title">Sip City Stories</div>
+              <div class="blog-slider__text">
+                Sip City Stories explores downtown Brooklyn's diverse café
+                scene, revealing its rich cultural narratives and flavors. Ideal
+                for students seeking inspiring study spots with amenities like
+                free Wi-Fi and cozy seating.
+              </div>
+              <a href="work/cafes.html" class="blog-slider__button view-button"
+                >View Case Study</a
+              >
+            </div>
+          </div>
+
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="images/doc-flow.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <div
+                class="div"
+                style="display: inline-flex; flex-direction: row; gap: 20px"
+              >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >December 2023</span
+                >
+                <span
+                  class="blog-slider__code p-2"
+                  style="border: 1px solid #333; border-radius: 20px"
+                  >Web Development</span
+                >
+              </div>
+              <h6>Opportunity College</h6>
+              <div class="blog-slider__title">Doc Flow</div>
+              <div class="blog-slider__text">
+                This website streamlines multi-document management, simplifying
+                uploading and navigation. As my first React project, it served
+                as a practical learning tool while enhancing user productivity.
+              </div>
+              <a
+                href="work/docFlow.html"
+                class="blog-slider__button view-button"
+                >View Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <p class="footer__name mt-md-2">Salia Nahshal</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="footer__social">
+              <a
+                href="https://www.linkedin.com/in/salia-nahshal-2ba27222b/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fab fa-linkedin-in icon"></i
+                ><span class="ms-2 social-name">LinkedIn</span></a
+              >
+              <a
+                href="https://github.com/salianahshal"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fab fa-github icon"></i
+                ><span class="ms-2 social-name">Github</span></a
+              >
+              <a
+                href="pdfFiles/salia_nahshal_resume.pdf"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fa fa-file icon" aria-hidden="true"></i
+                ><span class="ms-2 social-name">Resume</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/7bb2d86497.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>
