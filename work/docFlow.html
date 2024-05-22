@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ka-fei project</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap and CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles/css/cafes.css" />
+    <link rel="stylesheet" href="../styles/css/docFlow.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
+    />
+  </head>
+  <style></style>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+      <div class="container header">
+        <nav class="navbar navbar-expand-md">
+          <span class="navbar-brand mb-0" id="brandName"> Salia Nahshal </span>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link active">Work</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../education.html"
+                  class="nav-link"
+                  class="scroll-nav"
+                  style="--i: 1"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../pdfFiles/salia_nahshal_resume.pdf"
+                  class="nav-link"
+                  style="--i: 4"
+                  class="scroll-nav"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="../certificates.html"
+                  class="nav-link"
+                  style="--i: 5"
+                  class="scroll-nav"
+                  >Certificates</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Body -->
+    <div class="container-fluid">
+      <div class="row justify-content-center" style="background-color: #eff8ff">
+        <div class="col-md-12">
+          <div class="shrink">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center mt-4">
+                <h1
+                  style="
+                    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+                      1px 1px 1px rgba(0, 0, 0, 0.5);
+                  "
+                >
+                  DocFlow
+                </h1>
+                <p style="font-size: 18px">
+                  DocFlow simplifies task completion by enabling users to upload
+                  all necessary documents for a task and seamlessly switch
+                  between them, eliminating the need to navigate through various
+                  tabs.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center">
+                <img
+                  src="/images/docFlow-web.png"
+                  alt=""
+                  class="img-fluid proj-image mb-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-left mt-5">
+            <h2>Background</h2>
+            <p class="research-paragraph">
+              This website was created to streamline document management,
+              especially for tasks involving multiple documents. As my first
+              React project, it provided a practical way to learn this
+              JavaScript library while meeting a real need. The goal was to
+              build an intuitive platform that simplifies document uploading and
+              navigation, boosting user productivity and efficiency.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-2"></div>
+          <div class="col-md-5 text-left mt-2">
+            <h3>Role</h3>
+            <p style="font-size: 18px">
+              User research, human-centered design, visual design.
+            </p>
+          </div>
+          <div class="col-md-5 text-right mt-2">
+            <h3>Time</h3>
+            <p style="font-size: 18px">5 weeks, Feb. - April, 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Research Section -->
+      <section id="research" class="fold">
+        <div class="row justify-content-center">
+          <div class="col-md-8 mt-5">
+            <h2>Visual Design</h2>
+            <p class="research-paragraph">
+              I started by sketching in Procreate to explore various ideas for
+              the user interface design and the final version can be viewed
+              below.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-4 circle">
+            <img
+              src="/images/docFlow-sketch2.png"
+              alt=""
+              class="img-fluid"
+              style="border-radius: 5px"
+            />
+          </div>
+          <div class="col-md-4">
+            <h4>Design Principles</h4>
+            <ul class="design-list">
+              <li>
+                Simplicity and Clarity
+                <ul>
+                  <li>
+                    Clean, minimalistic design with a focus on functionality.
+                  </li>
+                  <li>
+                    Clear labels and intuitive icons to enhance usability.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Responsiveness
+                <ul>
+                  <li>
+                    Ensures the UI is fully responsive and accessible on various
+                    devices, including desktops, tablets, and smartphones.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h4>Home Page</h4>
+            <p>
+              The Home Page provides a simple and intuitive interface for users
+              to upload and manage their documents. It features an upload
+              button, and a list of uploaded documents with options to view.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4 circle">
+            <img
+              src="/images/docFlow-sketch1.png"
+              alt=""
+              class="img-fluid"
+              style="border-radius: 5px"
+            />
+          </div>
+          <div class="col-md-4">
+            <h4>AI Assistant Page (In-Progress) + Colors</h4>
+            <ul class="design-list">
+              <li>
+                Brief message of the AI assistant feature, indicating that it is
+                still under development.
+              </li>
+              <li>
+                Chat Interface Placeholder: Placeholder for users to interact
+                with the AI assistant.
+              </li>
+              <li>
+                <b>Next Steps for AI Assistant</b>:
+                <ul>
+                  <li>
+                    ChatGPT Integration: Plan to integrate with the ChatGPT API
+                    for users to ask document-related questions and receive
+                    relevant answers.
+                  </li>
+                  <li>
+                    Document Analysis: Analyze uploaded documents to provide
+                    insights and summaries.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Demo -->
+      <section id="demo">
+        <div class="row justify-content-center mb-2 mt-4">
+          <div class="col-md-8 text-left mt-2">
+            <h2>Final Product Slideshow</h2>
+            <p class="research-paragraph">
+              Explore the final project's result with this interactive
+              slideshow.
+            </p>
+
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/docFlow-demo1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/docFlow-demo2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/docFlow-demo3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/docFlow-demo4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/docFlow-demo5.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What I Learned Section -->
+      <section id="learned">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8 mt-4 mb-2">
+            <h2 class="mb-4">What I Learned</h2>
+
+            <p class="learn-paragraph">
+              ✔ <strong>Proficiency in React</strong>: Through the development
+              of DocFlow, I honed my skills in React, marking my initiation into
+              working with this popular JavaScript library.
+            </p>
+            <hr />
+            <p class="learn-paragraph">
+              ✔ <strong>Human-Centered Design Principles</strong>: Implementing
+              DocFlow underscored the significance of centering design decisions
+              around user needs, ensuring an intuitive interface that simplifies
+              document management.
+            </p>
+            <hr />
+            <p class="learn-paragraph">
+              ✔ <strong>Visual Design and Front-end Development</strong>:
+              DocFlow allowed me to merge visual design principles with
+              front-end development, emphasizing the importance of aesthetics in
+              enhancing user experience and productivity.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <p class="footer__name mt-md-2">Salia Nahshal</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="footer__social">
+              <a
+                href="https://www.linkedin.com/in/salia-nahshal-2ba27222b/"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fab fa-linkedin-in icon"></i
+                ><span class="ms-2 social-name">LinkedIn</span></a
+              >
+              <a
+                href="https://github.com/salianahshal"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fab fa-github icon"></i
+                ><span class="ms-2 social-name">Github</span></a
+              >
+              <a
+                href="pdfFiles/Salia_Nahshal_Resume.pdf"
+                target="_blank"
+                class="footer__social-link"
+                ><i class="fa fa-file icon" aria-hidden="true"></i
+                ><span class="ms-2 social-name">Resume</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/7bb2d86497.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+    <script src="../scripts/work.js"></script>
+  </body>
+</html>
