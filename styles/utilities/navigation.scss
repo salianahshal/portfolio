@@ -1,0 +1,254 @@
+@use "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Monsieur+La+Doulaise&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Questrial&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Syne:wght@400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Love+Light&family=Mea+Culpa&family=Passions+Conflict&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  // font-family: variables.$general-font;
+  // font-family: "Syne", sans-serif;
+  // font-optical-sizing: auto;
+  // font-style: normal;
+
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  // font-family: "Nunito", sans-serif;
+
+  // font-family: "Chakra Petch", sans-serif;
+  // font-family: "Niramit", sans-serif;
+  // font-family: "Arya", sans-serif;
+}
+
+body {
+  background-image: variables.$pages-bg-color;
+}
+//navigation bar
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 900;
+}
+
+.navigation {
+  // background-color: #e4e3f9;
+  // background-color: #f0eaf9;
+  background-color: #435684;
+  padding: 5px 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 35px;
+  // color: variables.$main-text-color;
+  // font-family: variables.$logo-font-family;
+  // text-shadow: 0 2px 1px #948dc3, -1px 3px 1px #edf1fb, -2px 5px 1px #654fa5;
+  // color: #1e2741;
+  // font-family: "Ubuntu", sans-serif;
+  // font-weight: bold;
+  // text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+  //   0px -4px 10px rgba(255, 255, 255, 0.3);
+  // text-decoration: none;
+  // font-weight: 700;
+  // letter-spacing: 1px;
+  // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+  //   0px 18px 23px rgba(0, 0, 0, 0.1);
+  // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+  //   0px 18px 23px rgba(0, 0, 0, 0.1);
+  // text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+  //   0px -5px 16px rgba(255, 255, 255, 0.3);
+  // color: #353f48;
+  color: #ffffff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  font-family: "Dancing Script", "Warnes", cursive;
+
+  font-weight: bold;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar .nav-link {
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 22px;
+  transition: 0.3s;
+  // background-image: linear-gradient(to right, #22718e, #183795 50%, #fff 50%);
+  background-image: linear-gradient(
+    to right,
+    #8dd1ff,
+    #def2ff 52%,
+    rgba(255, 255, 255, 0.9) 50%
+  );
+
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.navbar a {
+  &:before {
+    content: "";
+    background: #bdc6de;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+#brandName {
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: variables.$emphasized-text-color;
+  background-position: 0;
+}
+.navbar-toggler {
+  // background-color: #9ea9d4;
+  background-color: #d2d8f2;
+  outline: none !important;
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #435684;
+  padding: 10px 0;
+  text-align: start;
+}
+
+.footer__name {
+  display: flex;
+  justify-content: start;
+  font-weight: bold;
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+  font-family: "Dancing Script", "Warnes", cursive;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__social-link {
+  margin: 0 10px;
+  color: #ced4e4;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-name {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.footer__social-link:hover .icon,
+.footer__social-link:hover .social-name {
+  color: #c1d1ff;
+  transition: background-size 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    margin-top: -12%;
+  }
+  .footer__social-link {
+    margin: 3%;
+  }
+}
+
+//keyframes animation
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

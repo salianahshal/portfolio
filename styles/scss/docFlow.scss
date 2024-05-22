@@ -1,0 +1,90 @@
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" viewBox="0 0 24 24"%3E%3Ccircle cx="12" cy="12" r="11" stroke-width="2"/%3E%3Cpath d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" viewBox="0 0 24 24"%3E%3Ccircle cx="12" cy="12" r="11" stroke-width="2"/%3E%3Cpath d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+}
+
+.carousel-control-prev {
+  left: -50px; /* Adjust distance from left edge */
+}
+
+.carousel-control-next {
+  right: -50px; /* Adjust distance from right edge */
+}
+
+.sketch:hover {
+  animation: bloom ease-in-out 0.75s forwards;
+}
+.sketch:hover::before {
+  animation: circle 0.75s;
+}
+@keyframes bloom {
+  0% {
+    filter: grayscale(0.8);
+  }
+  40% {
+    filter: grayscale(0.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 0.5;
+    background: rgb(167, 201, 255, 0.2);
+  }
+  40% {
+    opacity: 1;
+    background: rgb(229, 238, 248, 0.2);
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+.card-list:has(li:hover) li:not(:hover) {
+  filter: blur(4px);
+}
+li {
+  margin: 0;
+  transition: all 150ms ease-in-out;
+}
+
+li::before {
+  content: "";
+}
+
+img {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  background: none;
+}
+
+.paper {
+  padding: 1.5rem;
+}
+
+li a {
+  padding-inline-start: 1rem;
+}
+
+.design-list {
+  line-height: 35px;
+  font-size: 18px;
+}

@@ -1,0 +1,146 @@
+body {
+  background-image: linear-gradient(to right top, #bad1f1, #bbcdee, #bdc9eb, #bec4e7, #c0c0e3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-family: "Roboto", "sans-serif";
+}
+
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+  text-shadow: 0 2px 1px #948dc3, -1px 3px 1px #edf1fb, -2px 5px 1px #654fa5;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: default;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 22px;
+  transition: 0.3s;
+  background-image: linear-gradient(to right, #22718e, #183795 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.navbar a:before {
+  content: "";
+  background: #183795;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #183795;
+  background-position: 0;
+}
+
+.navbar-toggler {
+  background-color: #d2d8f2;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  width: 25px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: -7px;
+  transition: all 0.15s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: var(--bs-gray-800);
+  height: 3px;
+  content: "";
+  position: relative;
+  top: 4px;
+  transition: all 0.35s ease-out;
+  transform-origin: center;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-90deg) translateX(7px);
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=navigation.cssc.map */
