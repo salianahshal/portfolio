@@ -13,19 +13,9 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
-  // font-family: variables.$general-font;
-  // font-family: "Syne", sans-serif;
-  // font-optical-sizing: auto;
-  // font-style: normal;
-
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  // font-family: "Nunito", sans-serif;
-
-  // font-family: "Chakra Petch", sans-serif;
-  // font-family: "Niramit", sans-serif;
-  // font-family: "Arya", sans-serif;
 }
 
 body {
@@ -48,32 +38,11 @@ body {
 }
 
 .navbar .navbar-brand {
-  font-size: 35px;
-  // color: variables.$main-text-color;
-  // font-family: variables.$logo-font-family;
-  // text-shadow: 0 2px 1px #948dc3, -1px 3px 1px #edf1fb, -2px 5px 1px #654fa5;
-  // color: #1e2741;
-  // font-family: "Ubuntu", sans-serif;
-  // font-weight: bold;
-  // text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-  //   0px -4px 10px rgba(255, 255, 255, 0.3);
-  // text-decoration: none;
-  // font-weight: 700;
-  // letter-spacing: 1px;
-  // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-  //   0px 18px 23px rgba(0, 0, 0, 0.1);
-  // text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-  //   0px 18px 23px rgba(0, 0, 0, 0.1);
-  // text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-  //   0px -5px 16px rgba(255, 255, 255, 0.3);
-  // color: #353f48;
+  font-size: 30px;
   color: #ffffff;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-family: "Dancing Script", "Warnes", cursive;
-
-  font-weight: bold;
   cursor: default;
   opacity: 0;
+  letter-spacing: 1px;
   animation: slideRight 1s ease forwards;
 }
 
@@ -83,14 +52,12 @@ body {
   font-weight: 600;
   margin-left: 22px;
   transition: 0.3s;
-  // background-image: linear-gradient(to right, #22718e, #183795 50%, #fff 50%);
   background-image: linear-gradient(
     to right,
     #8dd1ff,
     #def2ff 52%,
     rgba(255, 255, 255, 0.9) 50%
   );
-
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -130,7 +97,6 @@ body {
   background-position: 0;
 }
 .navbar-toggler {
-  // background-color: #9ea9d4;
   background-color: #d2d8f2;
   outline: none !important;
 }
@@ -191,12 +157,9 @@ body {
 .footer__name {
   display: flex;
   justify-content: start;
-  font-weight: bold;
   font-size: 28px;
   color: #ffffff;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-
-  font-family: "Dancing Script", "Warnes", cursive;
+  letter-spacing: 1px;
 }
 
 .footer__social {

@@ -35,13 +35,11 @@ body {
 }
 
 .navbar .navbar-brand {
-  font-size: 35px;
+  font-size: 30px;
   color: #ffffff;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-family: "Dancing Script", "Warnes", cursive;
-  font-weight: bold;
   cursor: default;
   opacity: 0;
+  letter-spacing: 1px;
   animation: slideRight 1s ease forwards;
 }
 
@@ -152,11 +150,9 @@ body {
 .footer__name {
   display: flex;
   justify-content: start;
-  font-weight: bold;
   font-size: 28px;
   color: #ffffff;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-family: "Dancing Script", "Warnes", cursive;
+  letter-spacing: 1px;
 }
 
 .footer__social {
