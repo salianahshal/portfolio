@@ -16,6 +16,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
     />
+    <style>
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -529,17 +546,15 @@
         <div class="row justify-content-center mb-2 mt-4">
           <div class="col-md-8 text-left mt-5">
             <h2>Fengshui Web Video Demo</h2>
-            <iframe
-              class="mt-4"
-              width="100%"
-              height="615"
-              src="https://www.youtube.com/embed/8QH5RKhPDhI?autoplay=1&loop=1&playlist=8QH5RKhPDhI"
-              title="YouTube video player"
-              frameborder="0"
-              style="border-radius: 5px"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container mt-4">
+              <iframe
+                src="https://www.youtube.com/embed/8QH5RKhPDhI?autoplay=1&loop=1&playlist=8QH5RKhPDhI&mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
